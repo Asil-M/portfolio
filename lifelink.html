@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LifeLink emergency response system: project overview, development process, and app screenshots.">
+  <title>LifeLink | Project case study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      let savedTheme;
+      try { savedTheme = localStorage.getItem('portfolio-theme'); } catch {}
+      document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="gallery-page">
+  <a class="skip-link" href="#main-content">Skip to case study</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html#projects">&#8592; Back to portfolio</a><span class="project-kicker">LifeLink</span></div></header>
+  <main id="main-content" class="container section-pad">
+    <p class="section-index">Selected work / 01</p>
+    <h1>LifeLink.<br><em>Connecting help.</em></h1>
+    <p class="hero-intro">An emergency response application that lets users send SOS requests and helps response teams manage emergencies and locate suitable facilities.</p>
+    <div class="case-actions"><a class="button button-primary" href="#screens">Explore app screens &#8595;</a><a class="text-link" href="#development">Behind the build &#8595;</a></div>
+    <dl class="case-facts">
+      <div><dt>My role</dt><dd>Mobile feature development, and project coordination</dd></div>
+      <div><dt>Context</dt><dd>Emergency response system</dd></div>
+      <div><dt>Timeline</dt><dd>6-week</dd></div>
+      <div><dt>Team</dt><dd>University project</dd></div>
+    </dl>
+    <section class="case-section" aria-labelledby="problem-title">
+      <p class="section-index">01 / The problem</p>
+      <h2 id="problem-title">Bridging Communication Gaps<br>During Emergencies.</h2>
+      <p class="case-copy">During wars, disasters, and other emergencies, internet access can become unstable or completely unavailable. In these situations, people may be unable to send an SOS request even when they urgently need help.
+LifeLink was designed to reduce this gap by allowing emergency requests to be relayed through nearby devices until they reach a phone with internet access. It also gives nearby people important information such as the emergency type, location, and distance so they can choose to assist while professional responders are still on the way.</p>
+      <p class="case-copy">The platform also addresses another challenge: people who need or want to offer donations may not feel comfortable contacting strangers directly. LifeLink manages and matches donation requests and offers through the system, allowing users to request or provide support more safely and privately.</p>
+      <p class="case-copy">Finally, the AI first-aid assistant provides step-by-step guidance and instructional content to help people take appropriate action during an emergency before medical or emergency teams arrive.</p>
+    <section class="case-section" aria-labelledby="contribution-title">
+      <p class="section-index">02 / Platform roles</p>
+      <h2 id="contribution-title">How the system supports each user group.</h2>
+      <div class="case-card-grid">
+        <article class="case-card">
+          <span class="section-index">01</span>
+          <h3>User</h3>
+          <p>Users can quickly report emergencies by selecting the incident type and sending an SOS request with the required details, current location, and GPS coordinates. They can also access first-aid guidance, track emergency updates, and use donation and help-request features.</p>
+          <figure class="case-role-media">
+            <img src="assets/images/lifelink-home.png" alt="LifeLink user emergency request screen">
+          </figure>
+        </article>
+        <article class="case-card">
+          <span class="section-index">02</span>
+          <h3>SOS Team</h3>
+          <p>The SOS team receives and manages emergency requests through a dedicated dashboard. Team members can review the emergency type, location, request status, and other important details to coordinate the appropriate response.</p>
+          <figure class="case-role-media">
+            <img src="assets/images/lifelink-sosteam.png" alt="LifeLink SOS team monitoring screen">
+          </figure>
+        </article>
+        <article class="case-card">
+          <span class="section-index">03</span>
+          <h3>Donation Team</h3>
+          <p>The donation team manages user requests and offers for support such as blood, food, and other essential needs. The dashboard helps organize available assistance and connect requests with suitable offers.</p>
+          <figure class="case-role-media">
+            <img src="assets/images/lifelink-donationteam.png" alt="LifeLink donation team management screen">
+          </figure>
+        </article>
+        <article class="case-card">
+          <span class="section-index">04</span>
+          <h3>Admin</h3>
+          <p>The admin manages the overall platform, including users, team accounts, system activity, and request information. The dashboard also provides statistics and insights that help monitor platform usage and emergency activity.</p>
+          <figure class="case-role-media">
+            <img src="assets/images/lifelink-admin.png" alt="LifeLink admin dashboard screen">
+          </figure>
+        </article>
+      </div>
+    </section>
+    <section class="case-section" id="screens" aria-labelledby="screens-title">
+      <p class="section-index">03 / App walkthrough</p>
+      <h2 id="screens-title">Every screen.<br>At your own pace.</h2>
+      <p class="case-copy">LifeLink is designed to support multiple emergency workflows, from user reporting to team coordination and donation management. The app can be used for Medical, Fire, and Police emergencies, with Medical covering ambulance and hospital support.</p>
+      <div class="full-gallery" data-lifelink-gallery data-gallery-mode="full"></div>
+    </section>
+    <section class="case-section" id="development" aria-labelledby="development-title">
+      <p class="section-index">04 / Behind the build</p>
+      <h2 id="development-title">The decisions behind the interface.</h2>
+      <div class="tech-list"><span>Flutter</span><span>Dart</span><span>Laravel</span><span>MySQL</span><span>Kotlin</span><span>OpenStreetMap</span><span>Python</span><span>FastAPI</span></div>
+      <div class="case-card-grid case-card-grid-two">
+        <article class="case-card"><h3>Emergency categories</h3><p class="case-copy">The SOS flow is organized around the main emergency categories used in the system: Medical, Fire, and Police. Under Medical, the project supports ambulance and hospital-related assistance, which helps users select the most relevant service for their situation.</p></article>
+        <article class="case-card"><h3>Offline resilience</h3><p class="case-copy">When there is no internet access, the mobile app can forward the SOS request through nearby phones until it reaches a connected device. This makes the request more reliable in emergency conditions and allows nearby users to respond while the official support system is being reached.</p></article>
+      </div>
+    </section>
+    <section class="case-section" aria-labelledby="outcome-title">
+      <p class="section-index">05 / Reflection</p>
+      <h2 id="outcome-title">What I learned. What comes next.</h2>
+      <div class="case-card-grid case-card-grid-two">
+        <article class="case-card"><h3>Outcome &amp; learning</h3><p class="case-copy">The project taught me how important it is to design emergency systems around speed, clarity, and communication. A good emergency platform should not only collect information, but also support the decision-making process for both the person in need and the team responding.</p></article>
+        <article class="case-card"><h3>Next steps</h3><p class="case-copy">The next step would be expanding the platform with stronger real-time coordination, more complete notification flows, and broader support for response analytics. The goal would be to improve reliability while keeping the system practical and easy to use in urgent situations.</p></article>
+      </div>
+    </section>
+    <a class="button button-primary" href="index.html#projects">Back to projects &#8599;</a>
+  </main>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
